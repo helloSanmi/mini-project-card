@@ -328,3 +328,18 @@ button::-moz-focus-inner,
 }
 
 /* End of Card Section */
+
+
+/* Error Page */
+.error-page {
+  margin-top: 10rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.error-page button {
+  margin-top: 3rem;
+  padding: 0.2em 0.8em;
+  text-transform: capitalize;
+}
