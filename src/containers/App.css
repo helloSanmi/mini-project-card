@@ -260,7 +260,7 @@ img {
 
 .card-action {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .card-action-button{
@@ -273,14 +273,6 @@ img {
   position: relative;
 }
 
-/* .card-action-button:before {
-  content: "";
-  position: absolute;
-  border-radius: 0.5em;
-  transition: all 0.35s ease-in-out;
-} */
-
-
 .card-action-button:hover {
   border: 4px solid var(--main-accent-color);
   color: #304D63;
@@ -291,6 +283,15 @@ img {
   bottom: -6px;
   left: -6px;
   right: -6px;
+}
+
+.button-orange {
+  background-color: #e6b2c6 !important;
+}
+
+.button-orange:hover {
+  background-color: white;
+  border: 1px solid #e6b2c6 !important;
 }
 
 button {

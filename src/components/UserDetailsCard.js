@@ -27,7 +27,7 @@ const UserDetailsCard = (props) => {
                     >
                     Home
                     </button>
-                    <button className="card-action-button"
+                    <button className="card-action-button button-orange"
                     onClick={()=> navigate(-1)}>
                         Back
                     </button>
