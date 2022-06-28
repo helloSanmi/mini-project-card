@@ -10,7 +10,7 @@ const Header = ({handleSearch}) => {
         <div className="header">
             <div className="header-text">
                 <button 
-                onClick={()=> navigate("/home") + location.search}
+                onClick={()=> navigate("/") + location.search}
                 >
                 Home
                 </button>

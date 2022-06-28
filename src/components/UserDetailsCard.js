@@ -24,7 +24,7 @@ const UserDetailsCard = (props) => {
                     <UserSocial user={user} />
                     <div className="card-action">
                         <button className="card-action-button" 
-                        onClick={()=> navigate("/home") + location.search}
+                        onClick={()=> navigate("/") + location.search}
                         >
                         Home
                         </button>

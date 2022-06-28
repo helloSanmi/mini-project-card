@@ -44,7 +44,7 @@ const App = () => {
           {/* <nav className="header container">
           <Link to='/'><h4>Home</h4></Link>
         </nav> */}
-        <Route exact path="/home" 
+        <Route exact path="/" 
             element={<Home cardArray={filteredUser} 
                         setSearchField={setSearchField} />} />
         
