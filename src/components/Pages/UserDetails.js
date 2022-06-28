@@ -23,10 +23,10 @@ const UserDetails = () => {
 
 
   return (
-    <>
+    <div className="container">
       <UserDetailsCard user={user} />
-    </>
-  );
-};
+    </div>
+  )
+}
 
 export default UserDetails;
