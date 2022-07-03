@@ -1,28 +1,14 @@
-import axios from "axios";
-import { useCallback, useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import CardList from "../CardList";
 import Header from "../Header";
+import useFetch from '../useFetch';
 
 
 const Followers = ({ searchField, setSearchField }) => {
 
     let { title } = useParams();
 
-    const [followUser, setFollowUser] = useState([]);
-
-    const fetchFollowers = useCallback( 
-        async () => {
-            const response = await axios(`https://api.github.com/users/${title}/followers`);
-            setFollowUser(response.data);
-        }, 
-        [title])
-
-
-    useEffect(() => {
-        fetchFollowers()
-    }, [fetchFollowers])
-
+    const { cardArray: followUser } = useFetch(`https://api.github.com/users/${title}/followers`);
 
     const filteredUser = followUser.filter((user) => user.login.toLowerCase()
                          .includes(searchField.toLowerCase()));
