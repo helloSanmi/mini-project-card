@@ -1,11 +1,11 @@
 import React from "react";
-import {useLocation, useNavigate} from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import UserSocial from './UserSocial';
 
 
 const UserDetailsCard = (props) => {
 
-    let location = useLocation();
+    // let location = useLocation();
     let navigate = useNavigate();
 
     let {user} = props;
@@ -22,12 +22,12 @@ const UserDetailsCard = (props) => {
                 </div>
                 <UserSocial user={user} />
                 <div className="card-action">
-                    <button className="card-action-button" 
+                    {/* <button className="card-action-button" 
                     onClick={()=> navigate("/") + location.search}
                     >
                     Home
-                    </button>
-                    <button className="card-action-button button-orange"
+                    </button> */}
+                    <button className="card-action-button"
                     onClick={()=> navigate(-1)}>
                         Back
                     </button>
