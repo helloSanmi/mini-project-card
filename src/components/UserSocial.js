@@ -11,8 +11,8 @@ const UserSocial = ({user}) => {
             <ul className="card-info">
                 <li>
                     <Link to={`/user/${login}/followers`} >
-                        <span>Followers</span>
                         <span className="card-info-stats">{followers}</span>
+                        <span>Followers</span>
                     </Link>               
                 </li>
                 <li>
