@@ -17,11 +17,8 @@ const CardList = (props) => {
                       <img src={avatar_url} alt='userimage' />
                   </div>
                   <h3 className='title'>{login.charAt(0).toUpperCase() + login.slice(1)}</h3>
-                  {/* <span className='post'>{type}</span> */}
                   <ul className='social'>
                     <li><Link to={`/user/${login}`}>View Details</Link></li>
-                    {/* <li><Link to={`/user/${login}/followers`}  >Followers</Link></li>
-                    <li><a href={html_url} >Repos</a></li> */}
                   </ul>
                 </div>
             </div>

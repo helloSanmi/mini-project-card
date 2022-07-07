@@ -22,13 +22,9 @@ const App = () => {
                         .includes(searchField.toLowerCase()));
 
 
-
   return (
     <Router>
       <Routes>
-          {/* <nav className="header container">
-          <Link to='/'><h4>Home</h4></Link>
-        </nav> */}
         <Route exact path="/" 
             element={<Home cardArray={filteredUser} 
                         setSearchField={setSearchField} />} />
